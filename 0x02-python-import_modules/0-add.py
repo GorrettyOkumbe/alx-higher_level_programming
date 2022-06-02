@@ -1,11 +1,6 @@
 #!/usr/bin/python3
 from add_0 import add
 
-'''
-imports a module add_0
-arguments a,b
-return (a+b)
-'''
 if __name__ == "__main__":
     a = 1
     b = 2
