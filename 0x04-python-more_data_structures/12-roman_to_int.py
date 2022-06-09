@@ -5,8 +5,8 @@ def roman_to_int(roman_string):
     number = 0
     total = 0
 
-    roman_digit = {'I' : 1, 'V' : 5, 'X' : 10, 'L' : 50, 'C' : 100, 'D' : 500, 'M' : 1000}
+    roman = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     for x in roman_string[::-1]:
-        number = roman_digit[x]
-        total += number if total < number * 5 else number
-    return number
+        number = roman[x]
+        total += number if(total < number * 5)else -number
+    return total
