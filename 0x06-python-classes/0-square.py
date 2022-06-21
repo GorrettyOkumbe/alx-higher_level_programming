@@ -1,3 +1,10 @@
 #!/usr/bin/python3
+
+
+"""
+Square - empty class
+"""
+
+
 class Square:
-    pass  # An empty block
+    pass
