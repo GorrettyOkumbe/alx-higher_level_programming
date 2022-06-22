@@ -81,7 +81,6 @@ class Square:
         """
         if self.__size == 0:
             print()
-            return
 
         # print self.__position[1] new lines
         for i in range(self.__position[1]):
