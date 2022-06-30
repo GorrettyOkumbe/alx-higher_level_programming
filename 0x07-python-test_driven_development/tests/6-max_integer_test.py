@@ -37,6 +37,9 @@ class TestMaxInteger(unittest.TestCase):
     def test_infinity(self):
         self.assertEqual(max_integer([3, 3, 3]), 3)
 
+    def test_max_at_the_beginning(self):
+        self.assertEqual(max_integer([5, 2, 3]), 5)
+
 
 if __name__ == "__main__":
     unittest.main()

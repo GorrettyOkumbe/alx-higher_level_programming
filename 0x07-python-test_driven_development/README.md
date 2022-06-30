@@ -99,3 +99,7 @@ About:
 Python version: 3.4
 You are allowed to use the C standard library
 Your shared library will be compiled with this command line: gcc -shared -Wl,-soname,libPython.so -o libPython.so -fPIC -I/usr/include/python3.4 102-python.c
+----
+python3 -m unittest tests.6-max_integer_test 2>&1 | tail -1.....run for unit test test cases
+--------------------------------------------------------------------------------------------------
+python3 -m doctest -v ./tests/5-text_indentation.txt..........run for text file test cases
