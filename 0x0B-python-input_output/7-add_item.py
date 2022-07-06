@@ -1,18 +1,19 @@
 #!/usr/bin/python3
-"""7-add_item module"""
+"""module"""
+
 import sys
 
-if __name__ == "__main__":
-    saving = __import__('5-save_to_json_file').save_to_json_file
-    loading = __import__('6-load_from_json_file').load_from_json_file
 
-    file = "add_item.json"
-    file_save = []
+file = "add_item.json"
+
+
+if __name__ == "__main__":
+    save_js = __import__('5-save_to_json_file').save_to_json_file
+    load_js = __import__('6-load_from_json_file').load_from_json_file
 
     try:
-        loading(file)
+        items = load_js(file)
     except FileNotFoundError:
-        file_save = []
-
-    file_save.extend(sys.argv[1:])
-    saving(file_save, file)
+        items = []
+    items.extend(sys.argv[1:])
+    save_js(items, file)
