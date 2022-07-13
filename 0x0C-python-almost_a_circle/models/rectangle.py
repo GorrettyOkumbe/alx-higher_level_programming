@@ -102,5 +102,6 @@ class Rectangle(Base):
             self.y = y
 
     def update(self, *args):
+        """public instance unpacking *args"""
         if args:
             self.__update(*args)
