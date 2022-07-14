@@ -26,5 +26,3 @@ class Square(Rectangle):
         """sets the value of size"""
         self.width = value
         self.height = value
-
-
