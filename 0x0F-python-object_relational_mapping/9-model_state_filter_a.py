@@ -19,4 +19,4 @@ if __name__ == "__main__":
                         .filter(State.name.like('%a%'))\
                         .order_by(State.id):
         print("{}: {}".format(state.id, state.name))
-    session.close()!/usr/bin/python3
+    session.close()
